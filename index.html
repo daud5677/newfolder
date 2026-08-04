@@ -174,14 +174,6 @@
       object-fit:cover;
       border:4px solid #fff;
     }
-    .photo-placeholder {
-      width:100%; height:100%;
-      border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      font-size:3.8rem;
-      background:linear-gradient(135deg,#fff,#ffe5ec);
-      border:4px solid #fff;
-    }
 
     .hero h1 {
       font-family:'Great Vibes',cursive;
@@ -483,9 +475,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="photo-frame">
-      <!-- Replace src with her actual photo -->
-      <!-- <img src="ilsa.jpg" alt="Ilsa Sultan"> -->
-      <div class="photo-placeholder">🌸</div>
+      <img src="ilsa.jpg" alt="Ilsa Sultan">
     </div>
     <h1>Happy Birthday<br>Ilsa Sultan!</h1>
     <p class="tagline">Today the world celebrates because you were born ✨🎂</p>
@@ -587,7 +577,7 @@
   </div>
 </div>
 
-<!-- ★ OPTIONAL MUSIC — put song.mp3 in same folder -->
+<!-- ★ MUSIC -->
 <audio id="bgMusic" loop>
   <source src="song.mp3" type="audio/mpeg">
 </audio>
@@ -740,7 +730,7 @@ today and always. Ameen. 🤲✨`;
   }
 
   // ═══════════════════════════════════════
-  //  CONFETTI (soft pastel colors)
+  //  CONFETTI
   // ═══════════════════════════════════════
   const cvs=document.getElementById('confettiCanvas');
   const ctx=cvs.getContext('2d');
@@ -754,7 +744,6 @@ today and always. Ameen. 🤲✨`;
   }
   resizeCvs(); addEventListener('resize',resizeCvs);
 
-  // Soft pastel colors
   const cColors=['#ffb6c1','#ffd1dc','#ff8fab','#ffe5ec','#e8d5ff','#c9a4e8','#ffdfba','#ffb7ce'];
 
   function burstConfetti(){
